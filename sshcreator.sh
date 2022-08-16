@@ -1,11 +1,11 @@
 echo =========================================
 echo ======[Adding the user f1nan]======
-sudo adduser f1nan
-echo ======[adding f1nan to sudo group]======
-usermod -aG sudo f1nan
-sudo usermod -aG sudo f1nan
-echo ======[changing passwd]======
-passwd f1nan 111600
+sudo useradd -m f1nan
+sudo adduser f1nan sudo
+echo "111600:111600" | sudo chpasswd
+sed -i 's/\/bin\/sh/\/bin\/bash/g' /etc/passwd
+sudo hostname cssbyalizaw
+echo -e "111600\n111600" | sudo passwd "$USER"
 echo =========================================
 
 echo ===========================================
