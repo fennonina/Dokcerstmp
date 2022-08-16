@@ -27,10 +27,4 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: step-1
-        run: echo ====[salam ozaiz]====
-      # Runs a set of commands using the runners shell
-      - name: step-2
-        run: |
-          echo ====[Hi Alizaw]====
-          echo ====[It's Working!]====
-
+        run: echo SALAM ALIZAW
