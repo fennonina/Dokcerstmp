@@ -1,0 +1,23 @@
+name: Ubuntu ssh Virtual Machine Avi
+on: 
+  workflow_dispatch:
+defaults:
+  run:
+    shell: bash
+    
+    
+jobs:
+  build:
+    runs-on: ubuntu-20.04
+    steps:
+    - uses: actions/checkout@v2
+#    - name: If failed, means ok
+#      run: ./not-exist-file.sh it bloke build
+    - name: Preparing Linux Environment
+      run: sudo apt-get update
+    - name: Setting Up the Ubuntu Environment
+    #  if: ${{ failure() }}
+      run: bash sshcreator.sh
+    - name: Keep Running Ubuntu System and keepAlive
+     # if: ${{ failure() }}
+      run: sleep 6h
