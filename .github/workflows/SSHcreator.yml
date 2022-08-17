@@ -1,4 +1,4 @@
-name: Alinux-CI
+name: Avi Ubuntu Desktop Virtual Machine
 on: 
   workflow_dispatch:
    inputs:
