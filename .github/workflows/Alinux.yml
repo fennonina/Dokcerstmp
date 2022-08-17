@@ -1,10 +1,16 @@
-name: Ubuntu ssh Virtual Machine Avi
+name: Alinux-CI
 on: 
   workflow_dispatch:
+   inputs:
+      crdauthcode:
+        description: 'Enter ChromeRemoteDesktop Headless code'
+        required: true
+      pincode:
+        description: 'Six digit Pin'
+        required: true
 defaults:
   run:
     shell: bash
-    
     
 jobs:
   build:
@@ -17,7 +23,11 @@ jobs:
       run: sudo apt-get update
     - name: Setting Up the Ubuntu Environment
     #  if: ${{ failure() }}
-      run: bash sshcreator.sh
+      run: bash sshcreator.sh ; bash CRDgnome.sh
+      env:
+        CHROME_HEADLESS_CODE: ${{ github.event.inputs.crdauthcode }}
+        GOOGLE_REMOTE_PIN: ${{ github.event.inputs.pincode }}
+    - name: Keep Running Ubuntu System and keepAlive
     - name: Keep Running Ubuntu System and keepAlive
      # if: ${{ failure() }}
       run: sleep 6h
