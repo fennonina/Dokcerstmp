@@ -1,9 +1,5 @@
 name: alinux-Kali
 on: 
-defaults:
-  run:
-    shell: bash
-    
 jobs:
   build:
     name: Linux System Build
