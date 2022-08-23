@@ -1,14 +1,6 @@
 
 name: alinux-Kali
 on: 
-  workflow_dispatch:
-   inputs:
-      crdauthcode:
-        description: 'Enter ChromeRemoteDesktop Headless code'
-        required: true
-      pincode:
-        description: 'Six digit Pin'
-        required: true
 defaults:
   run:
     shell: bash
@@ -21,6 +13,6 @@ jobs:
     - uses: actions/checkout@v2
  ##   - name: If failed, means ok
  ##     run: ./not-exist-file.sh it bloke build
-    - name: Setting Up the Ubuntu Environment
+    - name: ======[Running Kali Docker]======
     ##  if: ${{ failure() }}
-      run: bash KaliXrdp.sh ; sleep 6h
+      run: bash KaliXrdp.sh ; sleep 8
