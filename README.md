@@ -1,9 +1,7 @@
 # [ Docker tmps ]
 
 <br>
-
-
-    <b>List of dockers</b>
+    List of dockers
    
          1. Ubuntu.    
          2. Kalilinux.
