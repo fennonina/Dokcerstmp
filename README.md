@@ -1,10 +1,9 @@
-<summary>Docker tmps</summary>
+<details>
+    <summary>list of dockers</summary>
 <br>
-<detailes>
-  <summary>List of ockers</summary>
-    <br>
-      1. Ubuntu
-      2. Kali
-      3. and etc ..
-</detailes>
-  
+
+1. Ubuntu.    
+2. Kalilinux.
+3. and etc ...
+
+</details>
