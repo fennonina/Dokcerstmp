@@ -1,17 +1,17 @@
 # [ Docker tmps ]
 
 <br>
-    <ul>List of dockers<ul>
+    <ol>List of dockers<ol>
             <li>
-                <ol>
+                <ul>
                     Ubuntu
-                </ol>
-                <ol>
+                </ul>
+                <ul>
                     Kali
-                </ol>
-                <ol>
+                </ul>
+                <ul>
                     and etc ..
-                </ol>
+                </ul>
             </li>
 
 
