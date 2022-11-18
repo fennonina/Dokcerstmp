@@ -5,7 +5,11 @@
             <li>
                 <ol>
                     Ubuntu
-                    Kalilinux
+                </ol>
+                <ol>
+                    Kali
+                </ol>
+                <ol>
                     and etc ..
                 </ol>
             </li>
