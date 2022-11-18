@@ -5,11 +5,7 @@
             <li>
                 <ul>
                     Ubuntu
-                </ul>
-                <ul>
                     Kali
-                </ul>
-                <ul>
                     and etc ..
                 </ul>
             </li>
