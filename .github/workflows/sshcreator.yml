@@ -11,10 +11,6 @@ on:
         description: ' Create a subdomain ( without doamin ) , Example : cssbyalizaw-eg '
         required: true
         
-defaults:
-  run:
-    shell: bash
-    
 jobs:
   
   build:
@@ -23,7 +19,7 @@ jobs:
     runs-on: ubuntu-20.04
     timeout-minutes: 230
       
-    steps:
+     steps:
       - name: Updating apt repos.
         run: apt-get update -y
       - name: pulling Docker image.
