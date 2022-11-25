@@ -13,7 +13,7 @@ defaults:
   run:
     shell: bash
 jobs:
-    build:
+  build:
       name: Webssh Docker
       runs-on: ubuntu-20.04
       timeout-minutes: 230
