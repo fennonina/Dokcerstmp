@@ -1,4 +1,5 @@
 name: webssh
+
 on: 
   workflow_dispatch:
    inputs:
@@ -9,15 +10,20 @@ on:
       subdomain:
         description: ' Create a subdomain ( without doamin ) , Example : cssbyalizaw-eg '
         required: true
+        
 defaults:
   run:
     shell: bash
+    
 jobs:
+  
   build:
-      name: Webssh Docker
-      runs-on: ubuntu-20.04
-      timeout-minutes: 230
-      steps:
+  
+    name: Webssh Docker
+    runs-on: ubuntu-20.04
+    timeout-minutes: 230
+      
+    steps:
       - name: Updating apt repos.
         run: apt-get update -y
       - name: pulling Docker image.
