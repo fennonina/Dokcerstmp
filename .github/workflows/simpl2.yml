@@ -12,6 +12,14 @@ on:
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
+   inputs:
+      webssh_port:
+        description: 'Enter the web-port , ( default : 8080)'
+        default: 8080
+        required: false
+      subdomain:
+        description: 'Create a subdomain ( without doamin ) , Example : cssbyalizaw-eg'
+        required: true
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -34,3 +42,5 @@ jobs:
         run: |
           echo salaaaaaaam!
           echo AzzzziVAAA Gar Basimm!
+          echo ${{ github.event.inputs.webssh_port }}
+          echo ${{ github.event.inputs.subdomain }}
