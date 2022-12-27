@@ -1,9 +1,8 @@
 #!/bin/sh
 rm -rf ngrok ngrok.zip ng.sh xrdp-kali.sh x.sh > /dev/null 2>&1
-wget -O ng.sh https://raw.githubusercontent.com/fennonina/ready-codes/main/NGsh > /dev/null 2>&1
-chmod +x ng.sh
-./ng.sh
-clear
+wget https://raw.githubusercontent.com/fennonina/Dokcerstmp/main/ngtun.sh
+chmod +x ngtun.sh
+./ngtun.sh -a $authtoken
 echo "======================="
 echo NGROK IS SETTING UP
 echo "======================="
